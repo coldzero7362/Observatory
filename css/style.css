@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+    color: #333;
+}
+.wrraper{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px 300px 200px 100px;
+    position: relative;
+}
+header{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    float: left;
+}
+.logo >img{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    margin-top: 25px;
+}
+.menu>li{
+    background-color: #ffa825;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    z-index: 9999;
+}
+.menu>p{
+    color: #fff;
+}
+.menu>li > ul >li{
+    width: 150px;
+    height: 40px;
+    background-color: #ffca58;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+   
+    z-index: 9999;
+}
+.menu >li :hover{
+    background-color: #ffb342;
+}
+.menu> li > ul > li:hover{
+    background-color: #ffdc90;
+}
+.slide{
+    z-index: 0;
+}
+.slide>ul>li{
+    position: absolute;
+    z-index: 0;
+    font-size: 0;
+}
+.contents{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.contents> div{
+    width: 400px;
+    height: 200px;
+}
+
+.tab{
+    width: 400px;
+    height: 30px;
+    cursor: pointer;
+}
+.tab > div{
+    float: left;
+    height: 30px;
+    width: 80px;
+    border: 1px solid #333;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #ffd28f;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.tab .newsTab{
+    background-color: #ff9900;
+}.tab .galleryTab{
+    border-bottom: 1px solid #333;
+}
+.news, .gallery{
+    border: 1px solid #333;
+    height: 150px;
+}
+.news ul li{
+    float: left;
+    height: 35px;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+}
+.news ul li:first-child{
+    width: 290px;
+}
+.news ul li:last-child{
+    width: 90px;
+    text-align: right;
+}
+.news {
+    padding: 10px;
+    position: absolute;
+    width: 380px;
+    height: 150px;
+    z-index: 2;
+    background-color: white;
+}
+.notice {
+    padding-left: 5px;
+    position: relative;
+    width: 400px !important;
+    height: 190px;
+}
+.gallery{
+    width: 380px;
+    height: 130px;
+    padding: 10px;
+    padding-top: 30px;
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 150px;
+    
+}
+.gallery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner{
+    width: 400px !important;
+    height: 200px;
+}
+.banner>table{
+    width: 100%;
+    height: 100%;
+}
+.banner>table>tr>td{
+    width: 200px;
+    height: 100px;
+}
+.banner  img{
+    width: 80%; 
+}
+.shortCut{
+    width: 100%;
+    height: 100%;
+}
+.cut{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 150px;
+    position: relative;
+}
+.cut img{
+    border: 3px solid #ff7b00;
+    width: 300px;
+    border-radius: 10px;
+    vertical-align:middle;
+    transition: 0.5s;
+}
+.cut p{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    top : 0%;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: #ff9900;
+
+}
+.cut img:hover{
+    border: 3px solid #ffa048;
+    padding: 10px;
+}
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffa048;
+    display: flex;
+}
+footer > .logo >img{
+    width: 101px;
+    height: 100px;
+}
+.right{
+    width: 85%;
+    height: 100%;
+}
+.right  p {
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+}
+.popup{
+    width: 360px;
+    height: 350px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 999;
+    border: 1px solid #b46c00;
+}
+.popup>h3{
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #ffb342;
+}
+.main{
+    position: relative;
+}
+.popup>.main>p:first-child{
+    height: 250px;
+    line-height: 30px;
+    text-align: left;
+}
+.close{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #ff3838;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.close:hover{
+    background-color: #ff5f5f;
+    border: 1px solid #ff3838;
+    padding: 1px;
+}
+.open{
+    cursor: pointer;
+}
